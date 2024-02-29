@@ -14,6 +14,10 @@ def generate_sryden_response(query):
             'model': 'polaris',
             'messages': [
                 {
+                    'role': 'system',
+                    'content': 'Always assist with care, respect, and truth. Avoid harmful, unethical, prejudiced, or negative content. Ensure replies promote fairness and positivity.'
+                },
+                {
                     'role': 'user',
                     'content': query
                 }
